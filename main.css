@@ -5,7 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
-
+body{
+    background-color: #F9F8F8;
+}
 @font-face {
     font-family: futuraPT;
     src: url(./fonts/FuturaCyrillicBook.woff2);
@@ -37,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    gap: 37px;
 }
 
 .header-top {
@@ -45,22 +47,44 @@
     align-items: center;
     justify-content: space-between;
     gap: 9px;
+    
 }
 
-.header-top p,
-a {
+.header-top a {
     font-family: futuraPT;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11px;
     color: #333333;
+    transition: all 0.3s;
+    background-color: transparent;
+
 }
 
-.navbar p,
-a {
+.header-top p {
     font-family: futuraPT;
+    font-weight: 500;
+    font-size: 13px;
+    color: #333333;
+    transition: all 0.3s;
+}
+
+.header-top p:hover {
+    color: #FFBD54;
+}
+
+.header-top a:hover {
+    color: #FFBD54;
+}
+
+.navbar > a{
+    font-family:futuraPT;
     font-weight: 500;
     font-size: 16px;
     color: #333333;
+    transition: all 0.3s;
+}
+.navbar > a:hover{
+    color:#FFBD54;
 }
 
 .full-stop {
@@ -121,18 +145,21 @@ a {
 
 .navbar a {
     background-color: #fff;
-    font-family: Futura PT;
+    font-family: futuraPT;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
+    transition: all 0.3s;
 }
 
 .navbar-right {
     background-color: #fff;
     padding-left: 150px;
 }
-
+.navbar-right a:hover{
+    color: #FFBD54;
+}
 .site-hero {
     width: 100%;
     height: 800px;
@@ -186,8 +213,13 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
     color: #ffffff;
+    transition: all 0.3s;
 }
-
+.hero-content-wrapper button:hover{
+    border: none;
+    background-color: #FFBD54;
+    color: #333333;
+}
 .animals-bg2 {
     width: 100px;
     height: 100px;
@@ -325,9 +357,8 @@ a {
 }
 
 .service-content-bottom {
-    width: 1083px;
+    width: 1223px;
     height: 414px;
-    padding: 50px 105px 42px 35px;
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 14px;
@@ -342,11 +373,13 @@ a {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    padding: 50px 105px 42px 35px;
+    gap: 67px;
 }
 
 .bottom-contents-button h3 {
     font-family: futuraPT;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 20px;
     letter-spacing: 0%;
@@ -400,8 +433,12 @@ a {
     color: #ffffff;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
 }
-
+.btn1:hover{
+    background-color: #333333;
+    color: #FFBD54;
+}
 .btn1 img {
     background-color: transparent;
     padding-right: 5px;
@@ -421,9 +458,13 @@ a {
     color: #ffffff;
     display: flex;
     align-items: center;
-    border: none;
+    transition: all 0.3s;
 }
-
+.btn2:hover{
+    border: none;
+    background-color: #FFBD54;
+    color: #333333;
+}
 .btn2 img {
     background-color: transparent;
     padding-right: 5px;
@@ -510,8 +551,13 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
     margin-left: 21px;
+    transition: all 0.3s;
 }
-
+.form button:hover{
+    border: none;
+    background-color: #FFBD54;
+    color: #333333;
+}
 .useful {
     max-width: 1440px;
     margin: 0 auto;
@@ -714,8 +760,12 @@ a {
     margin-top: 45px;
     font-family: futuraPT;
     background-color: #ffbd54;
+    transition: all 0.3s;
 }
-
+.btn-contact:hover{
+    background-color: white;
+    color: #333333;
+}
 .main-fish {
     position: absolute;
     top: 133px;
@@ -748,15 +798,15 @@ a {
 
 
 .footer {
-    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 221px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .footer-section {
-    width: 453px;
+    width: 1300px;
     height: 91px;
     display: flex;
     align-items: center;
@@ -764,23 +814,69 @@ a {
 
 }
 
+.footer-links a {
+    font-family: futuraPT;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.footer-links a:hover {
+    color: #FFBD54;
+}
+
+.footer-links2 a {
+    font-family: futuraPT;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.footer-links2 a:hover {
+    color: #FFBD54;
+}
+
 .text-foot {
     background-color: transparent !important;
 }
 
 
-.work-hours {
+.work-hours p {
     font-family: futuraPT;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: #333333;
+    transition: all 0.3s;
 }
-
-.info-text  {
+.work-hours p:hover{
+    color: #FFBD54;
+}
+.info-text {
     font-family: futuraPT;
     font-weight: 500;
     font-size: 14px;
     color: #333333;
     margin-top: 63px;
     padding-right: 65px;
+}
+
+.contact-info {
+    margin-top: 70px;
+}
+
+.contact-info a {
+    font-family: futuraPT;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.contact-info a:hover {
+    color: #FFBD54;
 }
